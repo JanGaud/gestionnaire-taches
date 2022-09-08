@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gestionnaire de taches</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <h3>Gestionnaire de tâches</h3>
+            <label for="inputTache">Ajouter une tâche a faire</label>    
+           
+            <div class="ok-block"> 
+                <div>     
+                    <input name="tache" id="inputTache" type="text">
+                </div>
+                <div>
+                    <button type="button" onclick="cloneBoiteTache()">OK</button>
+                </div>
+            </div>
+            <hr>
+                <div id="gabarit-taches" class="invisible">
+                    <label for="checkbox"><hr id="checkbutton">
+                        <input type="checkbox" id="checkbox" name="checkbox" onchange="rayerTache()">
+                    </label>
+                    <h4 id="outputTache"></h4>
+                    <button type="button" class="supprimer" onclick="supprimerTache()">Supprimer</button>
+                </div>
+            <section id="liste-taches"></section>
+
+            </section>
+        </fieldset>
+    </form>
+    <script src="script.js\programmePrincipal.js"></script>
+</body>
+</html>
