@@ -1,4 +1,4 @@
-let i = 0;
+import { GestionTache } from "./GestionTache";
 
 function Initialisation(){
     rayerTache();
