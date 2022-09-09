@@ -20,5 +20,5 @@ btnAjouter.addEventListener("click", AjouterTache);
 
 function AjouterTache(){
     const texteEntre = tache.value;
-    new GestionTache(tache, boiteClones, gabarit);
+    new GestionTache(texteEntre, boiteClones, gabarit);
 };

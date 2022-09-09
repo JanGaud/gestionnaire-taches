@@ -1,7 +1,7 @@
 export class GestionTache{
     
     //Creer le clone du gabarit qui illustera les taches
-    constructor(tacheTexte, destinationClone, gabarit){
+    constructor(tache, destinationClone, gabarit){
         this.tache = tacheTexte;
         this.destination = destinationClone;
         this.clone = gabarit
@@ -28,11 +28,20 @@ export class GestionTache{
 
         this.gabarit.classList.remove("invisible");
 
-
+        console.log(this.gabarit);
         //event listener tache fait!
 
         this.checkbox.addEventListener("click", function (){
-            that.Fait();
+            if(checkBox.checked == true){
+                text.classList.add("fait");
+                selectButton.classList.remove("checkbutton");
+                selectButton.classList.add("checkbuttonClicked");
+             } 
+             else{
+                 text.classList.remove("fait");
+                 selectButton.classList.remove("checkbuttonClicked");
+                 selectButton.classList.add("checkbutton");
+             }
         });
 
         //event listener supprimer la tache
