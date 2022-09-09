@@ -8,17 +8,17 @@ import { GestionTache } from "./gestionnaire.js";
     const btnSupprimer = document.getElementById("supprimer");
     const gabarit = document.getElementById("gabarit-taches");
 
-    console.log(btnAjouter);
-    console.log(boiteClones)
-    console.log(checkedButton)
-    console.log(tache)
-    console.log(btnSupprimer)
-    console.log(gabarit)
+    // console.log(btnAjouter);
+    // console.log(boiteClones);
+    // console.log(checkedButton);
+    // console.log(tache);
+    // console.log(btnSupprimer);
+    // console.log(gabarit);
     
 
 btnAjouter.addEventListener("click", AjouterTache);
 
 function AjouterTache(){
-    // const texteEntre = tache.value;
-    // new GestionTache(texteEntre, boiteClones, gabarit);
+    const texteEntre = tache.value;
+    new GestionTache(tache, boiteClones, gabarit);
 }
