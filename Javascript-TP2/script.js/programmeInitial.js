@@ -1,4 +1,4 @@
-import { GestionTache } from "./GestionTache";
+import { GestionTache } from "./gestionnaire.js";
 
     //Importation des variables universelles
     const btnAjouter = document.getElementById("ok");

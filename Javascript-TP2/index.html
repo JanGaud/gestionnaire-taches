@@ -18,22 +18,23 @@
                     <input name="tache" id="inputTache" type="text">
                 </div>
                 <div>
-                    <button type="button">OK</button>
+                    <button type="button" id="ok">OK</button>
                 </div>
             </div>
             <hr>
                 <div id="gabarit-taches" class="invisible">
-                    <label for="checkbox"><hr id="checkbutton">
+                    <label for="checkbox">
                         <input type="checkbox" id="checkbox" name="checkbox">
+                        <hr class="checkbutton">
                     </label>
                     <h4 id="outputTache"></h4>
-                    <button type="button" class="supprimer">Supprimer</button>
+                    <button type="button" id="supprimer">Supprimer</button>
                 </div>
             <section id="liste-taches"></section>
 
             </section>
         </fieldset>
     </form>
-    <script src="script.js\programmePrincipal.js"></script>
+    <script type="module" src="script.js/programmeInitial.js"></script>
 </body>
 </html>
