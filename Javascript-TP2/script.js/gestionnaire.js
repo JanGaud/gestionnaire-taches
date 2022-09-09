@@ -19,8 +19,8 @@ export class GestionTache{
 
 
         //recupere les elements du clone
-        this.cloneTexte = this.listeTaches.querySelector(".outputTache");
-        this.cloneTexte.innerText = this.cloneTexte;
+        // this.cloneTexte = this.listeTaches.querySelector(".outputText");
+        // this.cloneTexte.innerText = this.tache;
         this.checkbox = this.listeTaches.querySelector("input[type=checkbox]");
         this.checkbox = this.listeTaches.querySelector("#checkbox");
         this.btnSupprimer = this.listeTaches.querySelector("#supprimer");
@@ -31,15 +31,21 @@ export class GestionTache{
 
         //event listener tache fait!
 
-        this.checkbox.addEventListener("click", function(){
+        this.checkbox.addEventListener("click", function (){
             that.Fait();
         });
 
+        //event listener supprimer la tache
+        this.btnSupprimer.addEventListener("click", function (){
+            that.gabarit.remove();
+        });
 
-        this.btnSupprimer.addEventListener("click",function delete()){
-            that.btnSupprimer();
-        }
+        this.destination.append(this.listeTaches);
 
+
+
+
+        //fonctions de taches
     }
 
 }
