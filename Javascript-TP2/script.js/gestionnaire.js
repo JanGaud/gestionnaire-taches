@@ -1,8 +1,8 @@
 export class GestionTache{
     
     //Creer le clone du gabarit qui illustera les taches
-    constructor(tache, destinationClone, gabarit){
-        this.tache = tacheTexte;
+    constructor(texteEntre, destinationClone, gabarit){
+        this.tache = texteEntre;
         this.destination = destinationClone;
         this.clone = gabarit
         this.Initialisation();
@@ -19,20 +19,19 @@ export class GestionTache{
 
 
         //recupere les elements du clone
-        // this.cloneTexte = this.listeTaches.querySelector(".outputText");
-        // this.cloneTexte.innerText = this.tache;
-        this.checkbox = this.listeTaches.querySelector("input[type=checkbox]");
+        this.cloneTexte = this.listeTaches.querySelector("#outputTache");
+        this.cloneTexte.innerText = this.tache;
         this.checkbox = this.listeTaches.querySelector("#checkbox");
+        console.log(this.checkbox);
         this.btnSupprimer = this.listeTaches.querySelector("#supprimer");
 
 
         this.gabarit.classList.remove("invisible");
 
-        console.log(this.gabarit);
         //event listener tache fait!
 
         this.checkbox.addEventListener("click", function (){
-            if(checkBox.checked == true){
+            if(this.checkBox.checked == true){
                 text.classList.add("fait");
                 selectButton.classList.remove("checkbutton");
                 selectButton.classList.add("checkbuttonClicked");

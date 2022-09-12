@@ -4,7 +4,7 @@ import { GestionTache } from "./gestionnaire.js";
     const btnAjouter = document.getElementById("ok");
     const boiteClones = document.getElementById("liste-taches");
     const checkedButton = document.getElementById("checkbox");
-    const tache = document.getElementById("inputTache").value;
+    const tache = document.getElementById("inputTache");
     const btnSupprimer = document.getElementById("supprimer");
     const gabarit = document.getElementById("gabarit-taches");
 
