@@ -37,9 +37,7 @@ function cloneBoiteTache() {
     const boiteClones = document.getElementById("liste-taches");
     let tache = document.getElementById("inputTache").value;
     let tacheBoite = document.getElementById("gabarit-taches");
-    let selectButton = document.getElementById("checkbutton")
-
-    selectButton.classList.add("checkbutton");
+    let selectButton = document.getElementById("checkbutton");
 
     document.getElementById('outputTache').innerText = tache;
     boiteClones.appendChild(clone);

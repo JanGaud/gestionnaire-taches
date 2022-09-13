@@ -3,7 +3,7 @@ import { GestionTache } from "./gestionnaire.js";
     //Importation des variables universelles
     const btnAjouter = document.getElementById("ok");
     const boiteClones = document.getElementById("liste-taches");
-    const checkedButton = document.getElementById("checkbox");
+    const checkedButton = document.getElementsByTagName("checkbox");
     const tache = document.getElementById("inputTache");
     const btnSupprimer = document.getElementById("supprimer");
     const gabarit = document.getElementById("gabarit-taches");

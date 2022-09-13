@@ -114,7 +114,7 @@ hr{
 }
 
 input[type='checkbox'] {
-    display:none;
+    display:;
     width: 30px;
     height: 30px;
     left: 2px;
@@ -123,7 +123,7 @@ input[type='checkbox'] {
     z-index: 4;    
 }
 
-#gabarit-taches{
+.tache{
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
@@ -131,7 +131,7 @@ input[type='checkbox'] {
     width: 100%;
 }
 
-#gabarit-taches h4{
+.tache h4{
     margin-top: 20px;
     font-size: 25px;
     font-family: serif;
