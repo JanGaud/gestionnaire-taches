@@ -31,21 +31,7 @@ export class GestionTache{
         this.gabarit.classList.add("tache");
 
          //event listener tache fait!
-        // this.checkbox.addEventListener("click", function (){
-        //     that.Rayer();
-        //     that.ButtonEffect();
-        // });
-
-
-        // function Rayer(){
-
-        //     if(this.checkBox.value == true){
-        //         this.cloneTexte.innerText.classList.add("fait");
-        //     }
-        //     else{
-        //         this.cloneTexte.innerText.classList.remove("fait");
-        //     }
-        // };
+É
 
         
         // function ButtonEffect(){
@@ -60,7 +46,7 @@ export class GestionTache{
         // };
 
         //event listener supprimer la tache
-        this.btnSupprimer.addEventListener("click", function (){
+        this.btnSupprimer.addEventListener("click", function name(){
             that.gabarit.remove();
         });
 
