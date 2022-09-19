@@ -5,9 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dragula.min.css">
     <title>Gestionnaire de taches</title>
 </head>
 <body>
+
+        <!-- code pour la popup -->
+        <div class="popup-conteneur invisible">
+            <div class="texte-conteneur">
+                <div class="bouton-fermer">
+                    <span>X</span>
+                </div>
+                <p>La tâche a été ajoutée</p>
+            </div>
+            <div class="bg"></div>
+        </div>
 
 
     <!-- le formulaire et la liste de taches -->
@@ -29,17 +41,19 @@
             <hr>
                 <div class="invisible gabarit-taches">
                     <label for="checkbox">
-                        <input type="checkbox" name="checkbox">
+                        <input type="checkbox" name="checkbox" class="checkbox" >
                         <hr class="checkbutton">
                     </label>
-                    <h4 id="outputTache"></h4>
+                    <h4 class="outputTache"></h4>
                     <button type="button" id="supprimer">Supprimer</button>
                 </div>
-            <section id="liste-taches"></section>
-
+            <section id="liste-taches">
+                <!-- Les taches sont ajouté en javascript -->
             </section>
         </fieldset>
     </form>
+    <script src='script.js/dragula.min.js'></script>
+    <script src="./script.js/popup.js"></script>
     <script type="module" src="script.js/programmeInitial.js"></script>
 </body>
 </html>

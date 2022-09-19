@@ -91,6 +91,7 @@ fieldset>h3{
 .ok-block button{
     width: 50px;
     height: 30px;
+    margin-left: 20px;
     margin-top: 10px;
     border: none;
     border-radius: 50px;
@@ -110,28 +111,31 @@ hr{
     background-color: rgba(0, 0, 0, 0.555);
     width: 100%;
     height: 1px;
-    margin-top: 20px;
 }
 
 input[type='checkbox'] {
-    display:;
-    width: 30px;
+    opacity: 0;
     height: 30px;
+    width: 30px;
     left: 2px;
-    top: 55px;
-    position:relative;
-    z-index: 4;    
+    top: 30px;
+    position:relative;    
 }
 
-.tache{
+.gabarit-taches{
     display: inline-flex;
     justify-content: space-between;
+    border-bottom: 1px solid black;
     align-items: center;
     gap: 20px;
     width: 100%;
 }
 
-.tache h4{
+.gabarit-taches:hover{
+    cursor: pointer;
+}
+
+.gabarit-taches h4{
     margin-top: 20px;
     font-size: 25px;
     font-family: serif;
@@ -158,6 +162,64 @@ input[type='checkbox'] {
     display: flex;
     flex-direction: row;
 }
+
+/*-------------------popup-------------------------------------------------*/
+.popup-conteneur {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-conteneur .bouton-fermer {
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    height: 25px;
+    width: 25px;
+    border-radius: 25px;
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+.popup-conteneur .texte-conteneur {
+    position: center;
+    max-width: 500px;
+    padding: 35px;
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 2;
+}
+
+.popup-conteneur .bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  } 
 
 /* -------------------Elements interactifs via javascript------------------ */
 .checkbutton{
@@ -186,6 +248,7 @@ input[type='checkbox'] {
 }
 
 .fait{
-    text-decoration: line-through;
+    text-decoration: line-through red;
+    transition: 0.8s;
 }
 
